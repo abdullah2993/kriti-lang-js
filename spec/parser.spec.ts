@@ -1,4 +1,3 @@
-import fs from 'fs';
 import { ArrayNode, ObjectNode, StringNode } from '../src/ast';
 import { Parser } from '../src/parser';
 
@@ -74,7 +73,7 @@ describe('Parser Tests', () => {
 			expect((node.value[2].value as ArrayNode).value.length).toBe(3);
 		}
 	});
-	it('should parse complex json', ()=>{
+	it('should parse complex json', () => {
 		const json = `[
 		null,
 		true,
@@ -86,7 +85,7 @@ describe('Parser Tests', () => {
 		[1, null, true],
 		{"foo": 1},
 		{"foo": 1, "bar": { "baz": [1, true]}},
-		{ 
+		{
 			"event": {
 			"name": "Freddie Jones",
 			"age": 27,

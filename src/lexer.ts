@@ -4,7 +4,7 @@ export interface Tokenizer {
 	next(): Token;
 }
 
-enum LexerMode{
+enum LexerMode {
 	Normal,
 	String,
 	Expr,
