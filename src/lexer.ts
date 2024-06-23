@@ -320,4 +320,15 @@ export class Lexer implements Tokenizer {
 		const tokenType = Lexer.keywords[identifier.toLowerCase()];
 		return tokenType ?? TokenType.Identifier;
 	}
+
+	public static scanAll(source: string): Token[] {
+		const lexer = new Lexer(source);
+		let token = lexer.next();
+		const res = [token];
+		while (token.type !== TokenType.EOF) {
+			token = lexer.next();
+			res.push(token);
+		}
+		return res;
+	}
 }
