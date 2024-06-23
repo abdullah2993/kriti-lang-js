@@ -1,0 +1,42 @@
+{
+  "value": [
+    {
+      "key": "key",
+      "value": {
+        "value": "value",
+        "type": "String"
+      },
+      "type": "Property"
+    },
+    {
+      "key": "key2",
+      "value": {
+        "value": "value2",
+        "type": "String"
+      },
+      "type": "Property"
+    },
+    {
+      "key": "key3",
+      "value": {
+        "value": [
+          {
+            "value": 1,
+            "type": "Number"
+          },
+          {
+            "value": 2,
+            "type": "Number"
+          },
+          {
+            "value": 3,
+            "type": "Number"
+          }
+        ],
+        "type": "Array"
+      },
+      "type": "Property"
+    }
+  ],
+  "type": "Object"
+}
